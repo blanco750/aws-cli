@@ -6,7 +6,7 @@ RUN apk -v --no-cache add \
         less \
         mailcap \
         && \
-    pip install --upgrade awscli==1.16.287 s3cmd==2.0.2 python-magic && \
+    pip install --upgrade pip awscli==1.16.290 s3cmd==2.0.2 python-magic && \
     apk -v --purge del py-pip
 VOLUME /root/.aws
 VOLUME /project
