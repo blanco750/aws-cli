@@ -31,7 +31,7 @@ fi
 while read line; do
 	DOCKER_ARGS+=" -e ${line}"
 done < <(env | grep "AWS_")
-docker pull blanco750/awscli-290
+docker pull blanco750/awscli-290:awscli290
 docker run --rm \
 	${DOCKER_ARGS} \
 	-v "$(pwd):/project" \
